@@ -12,3 +12,10 @@ Hello, world!
 1. One💕
 2. Two❤️
 3. Three☺️
+Horizontal rule:
+---
+`Hello, world!` with backticks	
+```
+# code block
+Hello, world!
+```
