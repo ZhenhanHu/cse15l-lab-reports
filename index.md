@@ -3,7 +3,8 @@ Hello, world!
 **Hello, world!**
 # Hello, world!
 ## Hello, world!
-![Link]([http://a.com](https://ucsd-cse15l-w24.github.io/)https://ucsd-cse15l-w24.github.io/)
+[Link](https://ucsd-cse15l-w24.github.io/)	
+![Image](https://ucsd-cse15l-w24.github.io/doodle.jpg)	
 > Hello, world!
 * List😃
 * List😘
