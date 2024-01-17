@@ -7,7 +7,7 @@ Here, the working directory before the command run was `/home/lecture1/messages`
 ![Image](cd_no_args.png)
 
 ##  *Example of using 'cd' command with with a path to a directory as an argument*
-Here, the working directory before the command run was `/home`, and input `cd` command with a path to a directory as an argument, `lecture1/`,  changes the working directory to `/home/lecture1`. There is no error message shown.
+Here, the working directory before the command run was `/home`, and input `cd` command with a path to a directory as an argument, `lecture1/`,  changes the working directory to `/home/lecture1`, also noticed by the prefix changes to '[user@sahara ~/lecture1]$'. There is no error message shown.
 ![Image](cd_path_to_directory.png)
 
 ##  *Example of using 'cd' command with a path to a file as an argument*
