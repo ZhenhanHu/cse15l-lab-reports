@@ -1,7 +1,7 @@
 **Lab Report 1**
 
 *Example of using 'cd' command with no arguments*
-![Image](cd_no_args.png)
+
 *Example of using 'cd' command with with a path to a directory as an argument*
 ![Image](cd_path_to_directory.png)
 *Example of using 'cd' command with a path to a file as an argument*
