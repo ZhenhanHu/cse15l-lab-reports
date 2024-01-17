@@ -25,7 +25,7 @@ Here, the working directory before the command run was `/home`, and input `ls` c
 ![Image](ls_directory.png)
 
 ##  *Example of using `ls` command with a path to a file as an argument*
-Here, the working directory before the command run was `/home`, and input `ls` command with a path to a file as an argument, `lecture1/messages/en-us.txt` outputs the argument I put, `lecture1/messages/en-us.txt`, and there is no error message shown and and no change to the working directory.
+Here, the working directory before the command run was `/home`, and input `ls` command with a path to a file as an argument, `lecture1/messages/en-us.txt` outputs the argument I put, `lecture1/messages/en-us.txt`, since there is no further content for the file. There is no error message shown and and no change to the working directory.
 ![Image](ls_fire.png)
 
 ---
