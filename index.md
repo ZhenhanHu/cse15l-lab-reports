@@ -39,5 +39,5 @@ Here, the working directory before the command run was `/home`, and input `cat` 
 ![Image](cat_directory.png)
 
 ##  *Example of using `cat` command with a path to a file as an argument*
-Here, the working directory before the command run was `/home`, and input `cat` command with a path to a file as an argument, `lecture1/messages/en-us.txt` or two files with adding "lecture1/messages/es-mx.txt " outputs the content of the specified file(s). No error message shown and working directory remain the same.
+Here, the working directory before the command run was `/home`, and input `cat` command with a path to a file as an argument, `lecture1/messages/en-us.txt` or two files with adding `lecture1/messages/es-mx.txt` outputs the content of the specified file(s). No error message shown and working directory remain the same.
 ![Image](cat_file.png)
