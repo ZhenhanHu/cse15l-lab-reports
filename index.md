@@ -13,11 +13,17 @@ Here, the working directory before the command run was `/home`, and input `cd` c
 ![Image](cd_path_to_file.png)
 
 *Example of using 'ls' command with no arguments*
+Here, the working directory before the command run was `/home`, and input `ls` command with no argument meaning there is no data pass into a command line command, and it lists the content of the current working directory, `lecture1`. There is no error message shown.
 ![Image](ls_no_args.png)
+
 *Example of using 'ls' command with with a path to a directory as an argument*
+Here, the working directory before the command run was `/home`, and input `cd` command with a path to a directory as an argument, `lecture1/`,  lists the contents of the specified directory, `Hello.class`, `Hello.java`, `messages`, and `README`. There is no error message shown.
 ![Image](ls_directory.png)
+
 *Example of using 'ls' command with a path to a file as an argument*
+Here, the working directory before the command run was `/home`, and input `cd` command with a path to a file as an argument, `lecture1/messages/en-us.txt` outputs the argument I put, `lecture1/messages/en-us.txt`, and there is no error message shown.
 ![Image](ls_fire.png)
+
 *Example of using 'cat' command with no arguments*
 
 *Example of using 'cat' command with with a path to a directory as an argument*
