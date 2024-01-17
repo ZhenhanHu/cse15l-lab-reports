@@ -13,11 +13,11 @@ Here, the working directory before the command run was `/home`, and input `cd` c
 ![Image](cd_path_to_file.png)
 
 *Example of using 'ls' command with no arguments*
-
+![Image](ls_no_args.png)
 *Example of using 'ls' command with with a path to a directory as an argument*
-
+![Image](ls_directory.png)
 *Example of using 'ls' command with a path to a file as an argument*
-
+![Image](ls_fire.png)
 *Example of using 'cat' command with no arguments*
 
 *Example of using 'cat' command with with a path to a directory as an argument*
