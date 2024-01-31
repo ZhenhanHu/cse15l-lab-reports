@@ -58,4 +58,9 @@ class Lab_report_2 {
 Note: I used `java.net.URLDecoder` class that decodes the URL parameters to handle the issue where "+" is displayed between spaces in output.
 
 ## *Screenshot 1 using `/add-message`*
+![Image](lab_report2,part1.1.png)
 Here, in class `Handler`, the method `handleRequest(URI url)` is called, and the passed in argument for `url` is paths/query `/add-message?s=Hi%20there!&user=Boris%20Hu`. Two Array List `users` and `messages` are relative field in class `Handler` with values which initially assigned empty, but after the first method call, value "Boris Hu" is added to `users` and value "Hi there!" is added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
+
+## *Screenshot 2 using `/add-message`*
+![Image](lab_report2,part1.2.png)
+Similarly, here, the method `handleRequest(URI url)` in class `Handler` is called again but with passed in argument for `url` being paths/query `/add-message?s=Hello%20there!&user=jpolitz`. Two Array List `users` and `messages` are relative field in class `Handler` with values updated with value `jpolitz` being added to `users` and value `Hello there!` being added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
