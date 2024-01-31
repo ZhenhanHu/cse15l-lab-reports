@@ -79,7 +79,7 @@ The private key, which must be kept secure and should not be shared, should only
 
 ## *Screenshots 2: The absolute path to the *public* key*
 ![Image](public_key.png)
-Contrary to the private key, the public key is stored in the `~/.ssh/` directory on my **ieng6** account as `/home/linux/ieng6/oce/77/477/zhh039/.ssh` shown in the screenshot. I first connected to ieng6 and then used the `ls` command to list out the key file that visually existed in the terminal.
+Contrary to the private key, the public key is stored in the `~/.ssh/` directory on my **`ieng6`** account as `/home/linux/ieng6/oce/77/477/zhh039/.ssh` shown in the screenshot. I first connected to ieng6 and then used the `ls` command to list out the key file that visually existed in the terminal.
 
 ## *Screenshots 3: Terminal interaction when logging into my `ieng6` account*
 ![Image](no_password_needed.png)
