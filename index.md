@@ -66,9 +66,13 @@ Similarly, here, the method `handleRequest(URI url)` in class `Handler` is calle
 
 ---
 
-# **Part 2: Setting up SSH Keys for logging into `ieng6`**
+# **Part 2**
+## *Setting up SSH Keys for logging into `ieng6` *
+
 ## *The absolute path to the *private* key*
+![Image](private_key.png)
 
 ## *The absolute path to the *public* key*
-
+![Image](public_key.png)
 ## *Terminal interaction when logging into my `ieng6` account*
+![Image](no_password_needed.png)
