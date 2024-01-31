@@ -2,7 +2,8 @@
 
 ---
 
-`
+## *Part 1: Code for my `ChatServer`*
+```
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLDecoder;
@@ -53,4 +54,8 @@ class Lab_report_2 {
         Server.start(port, new Handler());
     }
 }
-`
+```
+Note: I used `java.net.URLDecoder` class that decodes the URL parameters to handle the issue where "+" is displayed between spaces in output.
+
+## *Screenshot 1 using `/add-message`*
+Here, in class `Handler`, the method `handleRequest(URI url)` is called, and the passed in argument for `url` is paths/query `/add-message?s=Hi%20there!&user=Boris%20Hu`. Two Array List `users` and `messages` are relative field in class `Handler` with values which initially assigned empty, but after the first method call, value "Boris Hu" is added to `users` and value "Hi there!" is added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
