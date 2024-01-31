@@ -1,8 +1,7 @@
 # **Lab Report 2 -- Zhenhan Hu(A17282448)**
-
 ---
-
-## *Part 1: Code for my `ChatServer`*
+# **Part 1**
+## *Code for my `ChatServer`*
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -55,7 +54,7 @@ class Lab_report_2 {
     }
 }
 ```
-Note: I used `java.net.URLDecoder` class that decodes the URL parameters to handle the issue where "+" is displayed between spaces in output.
+Note: I used `java.net.URLDecoder` class that decodes the URL parameters to handle the issue where "+" is displayed between spaces in output, and catched `UnsupportedEncodingException` caused from it.
 
 ## *Screenshot 1 using `/add-message`*
 ![Image](lab_report2,part1.1.png)
@@ -64,3 +63,12 @@ Here, in class `Handler`, the method `handleRequest(URI url)` is called, and the
 ## *Screenshot 2 using `/add-message`*
 ![Image](lab_report2,part1.2.png)
 Similarly, here, the method `handleRequest(URI url)` in class `Handler` is called again but with passed in argument for `url` being paths/query `/add-message?s=Hello%20there!&user=jpolitz`. Two Array List `users` and `messages` are relative field in class `Handler` with values updated with value `jpolitz` being added to `users` and value `Hello there!` being added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
+
+---
+
+# **Part 2: Setting up SSH Keys for logging into `ieng6`**
+## *The absolute path to the *private* key*
+
+## *The absolute path to the *public* key*
+
+## *Terminal interaction when logging into my `ieng6` account*
