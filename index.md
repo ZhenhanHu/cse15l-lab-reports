@@ -57,29 +57,24 @@ class Lab_report_2 {
 Note: I used the `java.net.URLDecoder` class that decodes the URL parameters to handle the issue where "+" is displayed between spaces in the output, and catched `UnsupportedEncodingException` caused from it.
 
 ## *Screenshot 1 using `/add-message`*
-![Image](lab_report2,part1.1.png)
+![Image](/images/report2-images/lab_report2,part1.1.png)
 Here, in class `Handler`, the method `handleRequest(URI url)` is called, and the passed-in argument for `url` is paths/query `/add-message?s=Hi%20there!&user=Boris%20Hu`. Two Array List `users` and `messages` are relative fields in class `Handler` with values that were initially assigned as empty, but after the first method call, the value "Boris Hu" is added to `users` and the value "Hi there!" is added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
 
 ## *Screenshot 2 using `/add-message`*
-![Image](lab_report2,part1.2.png)
+![Image](/images/report2-images/lab_report2,part1.2.png)
 
 Similarly, here, the method `handleRequest(URI url)` in class `Handler` is called again, but with the passed-in argument for `url` being paths/query `/add-message?s=Hello%20there!&user=jpolitz`. Two Array List `users` and `messages` are relative fields in class `Handler` with values updated with value `jpolitz` being added to `users` and value `Hello there!` being added to `messages`. The elements in `users` and `messages` are stored and later returned/displayed on the web page.
 
 ---
 
-# **Part 2**
-## *Setting up SSH Keys for logging into `ieng6` *
-![Image](SettingKeys1.png)
-![Image](SettingKeys2.png)
-As the two screenshots attached above have shown, I followed each step in week 3 lab part 3 for creating SSH keys. I found the key is saved in `/home/.ssh/id_ed25519.pub`, then I created a directory using `mkdir .ssh` and copied the SSH key onto my remote account.
-
+# **Part 2, Setting up SSH Keys for logging into `ieng6`**
 ## *Screenshots 1: The absolute path to the *private* key*
 ![Image](private_key.png)
-The private key, which must be kept secure and should not be shared, should only be known to its owner, and it is usually stored in the `~/.ssh/` directory on the **local** machine. As the screenshot shows, the absolute path where it is located is `/home/.ssh`, and I used the `ls` command in the terminal to list files in that directory.
+The private key, which must be kept secure and should not be shared, should only be known to its owner, and it is usually stored in the `~/.ssh/` directory on the **local** machine and the absolute path to the private key file is `~/.ssh/id_rsa` shown in the screenshot.
 
 ## *Screenshots 2: The absolute path to the *public* key*
 ![Image](public_key.png)
-Contrary to the private key, the public key is stored in the `~/.ssh/` directory on my **`ieng6`** account as `/home/linux/ieng6/oce/77/477/zhh039/.ssh` shown in the screenshot. I first connected to ieng6 and then used the `ls` command to list out the key file that visually existed in the terminal.
+Contrary to the private key, the public key is stored in the `~/.ssh/` directory on my **`ieng6`** account and the absolute path to the public key file is `~/.ssh/authorized_keys` shown in the screenshot. I first connected to ieng6 and then used the `ls` command to list out the key file that visually existed in the terminal.
 
 ## *Screenshots 3: Terminal interaction when logging into my `ieng6` account*
 ![Image](no_password_needed.png)
