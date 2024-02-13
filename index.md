@@ -69,15 +69,15 @@ Similarly, here, the method `handleRequest(URI url)` in class `Handler` is calle
 
 # **Part 2, Setting up SSH Keys for logging into `ieng6`**
 ## *Screenshots 1: The absolute path to the *private* key*
-![Image](private_key.png)
+![Image](/images/report2-images/private_key_absolute_path.png)
 The private key, which must be kept secure and should not be shared, should only be known to its owner, and it is usually stored in the `~/.ssh/` directory on the **local** machine and the absolute path to the private key file is `~/.ssh/id_rsa` shown in the screenshot.
 
 ## *Screenshots 2: The absolute path to the *public* key*
-![Image](public_key.png)
+![Image](/images/report2-images/public_key_absolute_path.png)
 Contrary to the private key, the public key is stored in the `~/.ssh/` directory on my **`ieng6`** account and the absolute path to the public key file is `~/.ssh/authorized_keys` shown in the screenshot. I first connected to ieng6 and then used the `ls` command to list out the key file that visually existed in the terminal.
 
 ## *Screenshots 3: Terminal interaction when logging into my `ieng6` account*
-![Image](no_password_needed.png)
+![Image](/images/report2-images/no_password_required.png)
 This screenshot shows that there is no prompt for password displayed, which means I do not need to input my password when I log into my remote account anymore.
 
 ---
