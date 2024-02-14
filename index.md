@@ -119,4 +119,24 @@ Issues Summary: The method is attempting to gives a new array from input array i
 
 ---
 # **Part 2 - Researching Commands**
+Citation: I consulted geeksforgeeks.org for more grep command-line options such as `-i` and `-v` and their examples, then I tried my own in `docsearch` workspace. https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+## *4 interesting command-line options of 'grep'*
+**`grep -r`**
+The command-line option of `-r` tells `grep` to read all the files under each directory recursively. This makes the search range covers across multiple files and directories. As you can see, `grep -r "United Nations"` searches "United Nations" on files under multiple directories including `./technical/plos`, `./technical/911report`, and `./technical/government/`. The matched results of `grep -r "Anthem"` covers several different directories and files as well.
+![Image](/images/report3-images/grep-r1.png)
+![Image](/images/report3-images/grep-r2.png)
 
+**`grep -l`**
+The command-line option of `-l` tells `grep` to list the names of files with matching lines. The filenames are displayed only, not the matched lines. In the two examples below, `grep -l` gives the files names of matched results for "UAE" under all .txt files within `./technical/911report` directory, and for "North America" under all .txt files within `./technical/plos`.
+![Image](/images/report3-images/grep-l1.png)
+![Image](/images/report3-images/grep-l2.png)
+
+**`grep -i`**
+The command-line option of `-i` tells `grep` to be case insensitive for matching. In the two examples below, result that matched "in clinical trials" is also included for the searching key "in CLINICAL trials", and "scientific contributions" is included for "SCIENTIFIC contributions".
+![Image](/images/report3-images/grep-i1.png)
+![Image](/images/report3-images/grep-i2.png)
+
+**`grep -v`**
+The command-line option of `-v` tells `grep` to giving matching lines inverted, which means it only shows the lines that do not match the given pattern. In the two examples below, `grep -v` gives lines that does not match the given argument (case-sensitive) for "whistleblow" within `./technical/plos/pmed.0020281.txt`, and for "primate" within `./technical/plos/pmed.0020278.txt`.
+![Image](/images/report3-images/grep-v1.png)
+![Image](/images/report3-images/grep-v2.png)
