@@ -57,7 +57,7 @@ public class ArrayTests {
 ```
 ![Image](/images/report3-images/failure_inducing_test_output.png)
 ![Image](/images/report3-images/failure_inducing_test.png)
-Explanation: The `reversed` method failed nonempty input array `{1, 2, 3}` because, in the `for` loop of the method, original input array at index i, `arr[i]`, is being assigned the value of `newArray[arr.length - i - 1]`, but `newArray` with the same capacity is created initially empty, which simply gives 0 instead of intended number. It did not induce a failure for empty input array since input array is empty and the loop inside the reversed method will not execute, thus no incorrect swapping or assignments are made, and the method will simply return the empty array. Thus, inside the `for` loop, it should be the other way around: newArray should be filled with the values from arr in reversed order, `newArray[i] = arr[arr.length - i - 1];`. <br>
+Explanation: The `reversed` method failed nonempty input array `{1, 2, 3}` because, in the `for` loop of the method, original input array at index i, `arr[i]`, is being assigned the value of `newArray[arr.length - i - 1]`, but `newArray` with the same capacity is created initially empty, which simply gives 0 instead of intended number. It did not induce a failure for empty input array since input array is empty and the loop inside the reversed method will not execute, thus no incorrect swapping or assignments are made, and the method will simply return the empty array. Thus, inside the `for` loop, it should be the other way around: `newArray` should be filled with the values from `arr` in reversed order, `newArray[i] = arr[arr.length - i - 1];`. <br>
 However, there is still an issue with the nonempty input array, but this time, different error message (symptom) was given, realizing the returned array is not reversed compare to the input array...<br>
 ![Image](/images/report3-images/new_failure_inducing_test_output.png)
 ![Image](/images/report3-images/new_failure_inducing_test.png)
@@ -100,6 +100,21 @@ public class ArrayTests {
 ![Image](/images/report3-images/successful_junit.png)
 
 ## *The before-and-after code change required to fix it*
+**Before**
+```
+public class ArrayExamples {
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+}
+```
+**After**
 ```
 public class ArrayExamples {
   // Returns a *new* array with all the elements of the input array in reversed
