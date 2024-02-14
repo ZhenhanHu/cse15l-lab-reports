@@ -100,6 +100,19 @@ public class ArrayTests {
 ![Image](/images/report3-images/successful_junit.png)
 
 ## *The before-and-after code change required to fix it*
+```
+public class ArrayExamples {
+  // Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+}
+```
 ![Image](/images/report3-images/before&after.png)
 
 Issues Summary: The method is attempting to gives a new array from input array in reversed order, but it contains several issues. Specifically, inside the `for` loop, `arr[i]` is being assigned the value of `newArray[arr.length - i - 1]`, but `newArray` is empty. It should be the other way around: `newArray` should be filled with the values from `arr` in reversed order. After that, it should return the new array with the elements of the input array in reversed order. However, the current implementation modifies the input array arr in place and returns it, rather than returning a new reversed array.
