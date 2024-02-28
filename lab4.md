@@ -2,7 +2,7 @@
 ---
 # **Step 4**
 ![Image](/images/report4-images/step4_ssh_login.png) <br>
-I first Logged into my `ieng6` account using `ssh`. <br>
+I first logged into my `ieng6` account using `ssh`. <br>
 Keys pressed: `ssh` `<space>` `zhh039@ieng6-201.ucsd.edu`  `<enter>`
 
 # **Step 5**
@@ -20,7 +20,7 @@ Keys pressed: `cd` `<space>` `l` `<tab>` `<enter>`, and then `bash` `<space>` `t
 ![Image](/images/report4-images/step7.1_vim.png) <br>
 ![Image](/images/report4-images/step7.2_fix.png) <br>
 I opened the Vim text editor to edit and fix the file in order to pass the tests. Again, pressing `<tab>` after `L` and adding `.java` enters the file name completely. <br>
-Keys pressed: `vim` `<space>` `<Shift + L>` `<tab>` `.java` `<enter>`
+Keys pressed: `vim` `<space>` `<Shift + l>` `<tab>` `.java` `<enter>`
 
 The instruction to fix the code specifies changing `index1` to `index2`  on the line where the command is indicated. So, I first find "index1" using `/index1` and `<enter>` to confirm
 my choice, and then using `n` to go through each matched option until the one I need to fix. Then, After reaching the last character at the end of the word, "1", using `e` and 
@@ -37,6 +37,6 @@ Keys pressed: `bash` `<space>` `t` `<tab>` `<enter>`
 Lastly, I committed and pushed the resulting change to my Github account with the commit message "Update". Specifically, I first used `git add` with the file to stage changes for 
 the next commit, then used `git commit` to save my staged changes with `-m` to include my commit message, and lastly, I used `git push origin main` to send the committed changes 
 to my GitHub account. <br>
-Keys pressed: `git` `<space>` `add` `<space>` `<Shift + L>` `<tab>` `.java` `<enter>`, and then `git` `<space>` `commit` `<space>` `-m` `<space>` `<Shift + '>` `<Shift + U>pdate` `<Shift + '>` `<enter>`,
+Keys pressed: `git` `<space>` `add` `<space>` `<Shift + l>` `<tab>` `.java` `<enter>`, and then `git` `<space>` `commit` `<space>` `-m` `<space>` `<Shift + '>` `<Shift + U>pdate` `<Shift + '>` `<enter>`,
 and lastly `git` `<space>` `push` `<space>` `origin` `<space>` `main` `<enter>`
 
