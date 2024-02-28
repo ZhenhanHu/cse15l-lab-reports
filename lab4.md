@@ -37,6 +37,6 @@ Keys pressed: `bash` `<space>` `t` `<tab>` `<enter>`
 Lastly, I committed and pushed the resulting change to my Github account with the commit message "Update". Specifically, I first used `git add` with the file to stage changes for 
 the next commit, then used `git commit` to save my staged changes with `-m` to include my commit message, and lastly, I used `git push origin main` to send the committed changes 
 to my GitHub account. <br>
-Keys pressed: `git` `<space>` `add` `<space>` `<Shift + L>` `<tab>` `<enter>`, and then `git` `<space>` `commit` `<space>` `-m` `<space>` `<Shift + '>` `<Shift + U>pdate` `<Shift + '>` `<enter>`,
+Keys pressed: `git` `<space>` `add` `<space>` `<Shift + L>` `<tab>` `.java` `<enter>`, and then `git` `<space>` `commit` `<space>` `-m` `<space>` `<Shift + '>` `<Shift + U>pdate` `<Shift + '>` `<enter>`,
 and lastly `git` `<space>` `push` `<space>` `origin` `<space>` `main` `<enter>`
 
